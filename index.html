@@ -4,8 +4,8 @@
 <meta name="viewport" content="width=device-width"/>
 <meta name="builder" content="Stronglify"/>
 <link rel="icon" type="image/x-icon" href="https://media.stronglify.com/295/favicon-1795015972.svg"/>
-<title>Órbita Negra — siempre hay más</title>
-<meta name="description" content="Un recorrido en blanco y negro entre planetas, fotografías solares y estrellas en distintas capas de profundidad."/>
+<title>alwayssunny · Siempre hay más</title>
+<meta name="description" content="Un lugar para perder la medida: fotografías del espacio, bitácora de viajes lentos y lecturas sobre lo inmenso."/>
 <meta name="robots" content="index"/>
 <link rel="canonical" href="https://orbita-negra.test/"/><style>
 html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}
@@ -153,6 +153,37 @@ h1, h2, h3 { font-family: var(--font-heading); font-weight: 700; }
   html { scroll-behavior: auto; }
   .as-star-layer, .as-planet, .as-sun { transform: none !important; }
 }
+ 
+.as-experience > .as-document { z-index: 1; }
+.as-kicker { display: inline-block; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.7; }
+.as-log { position: relative; z-index: 2; width: min(100%, 80rem); margin-inline: auto; padding: clamp(5rem, 10vw, 10rem) var(--page-gutter) 0; }
+.as-log h2 { font-size: clamp(3rem, 7.6vw, 7rem); line-height: 0.96; letter-spacing: -0.065em; }
+.as-log-list { list-style: none; margin: 3rem 0 1rem; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(2rem, 4vw, 4rem); }
+.as-log-list h3 { margin-top: 0.75rem; font-size: clamp(1.375rem, 2.2vw, 2rem); line-height: 1.1; letter-spacing: -0.04em; }
+.as-log-list h3 a { display: inline; }
+.as-log-list p { margin-top: 0.75rem; opacity: 0.8; }
+.as-post-list { list-style: none; margin: clamp(3rem, 7vw, 6rem) 0 0; padding: 0; display: grid; gap: clamp(3rem, 7vw, 6rem); }
+.as-post { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); align-items: center; gap: clamp(2rem, 6vw, 6rem); }
+.as-post-media { display: block; mix-blend-mode: screen; }
+.as-post-media img { width: 100%; aspect-ratio: 1; object-fit: cover; filter: grayscale(1) contrast(1.1); mask-image: radial-gradient(circle at center, #000 55%, transparent 71%); -webkit-mask-image: radial-gradient(circle at center, #000 55%, transparent 71%); }
+.as-post-copy h2 { margin-top: 0.75rem; font-size: clamp(2rem, 4.4vw, 4rem); line-height: 1; letter-spacing: -0.055em; text-wrap: balance; }
+.as-post-copy p { max-width: 46ch; margin-top: 1.25rem; font-size: 1.0625rem; opacity: 0.85; }
+.as-article article { max-width: 60rem; }
+.as-back { margin-bottom: 2rem; min-height: 44px; }
+.as-article h1 { margin-bottom: 1.25rem; }
+.as-article-intro { max-width: 52ch; margin-top: 1.75rem !important; font-size: clamp(1.125rem, 1.8vw, 1.5rem); line-height: 1.5; }
+.as-article-planet { width: min(100%, 38rem); margin: clamp(2rem, 6vw, 5rem) auto 0; }
+.as-page-hero { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); align-items: center; gap: clamp(2rem, 6vw, 6rem); }
+.as-page-planet { width: 130%; margin-right: -30%; }
+.as-document > .as-text-link { margin-top: 3rem; }
+.as-footer-nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 0.5rem 2rem; }
+@media (max-width: 700px) {
+  .as-log-list { grid-template-columns: minmax(0, 1fr); }
+  .as-post, .as-page-hero { grid-template-columns: minmax(0, 1fr); }
+  .as-post-media { width: 80%; }
+  .as-page-planet { width: 110%; margin-right: 0; }
+  .as-footer-nav { justify-content: flex-start; }
+}
 </style><link rel="preload" href="https://raw.githubusercontent.com/google/fonts/main/ofl/spacegrotesk/SpaceGrotesk%5Bwght%5D.ttf" as="font" type="font/ttf" crossorigin=""/></head>
 <body>
   <div class="as-experience" id="inicio">
@@ -168,11 +199,15 @@ h1, h2, h3 { font-family: var(--font-heading); font-weight: 700; }
 <header class="as-head">
   <a class="as-brand" href="https://orbita-negra.test">alwayssunny</a>
   <nav class="as-nav" aria-label="Navegación principal">
-    <a href="https://orbita-negra.test#universo">Universo</a>
-    <a href="https://orbita-negra.test#deriva">Deriva</a>
+    
+    <a href="./">Universo</a>
+    
+    <a href="./blog">Bitácora</a>
+    
+    <a href="./about">Nosotros</a>
+    
   </nav>
 </header>
-
   <main class="as-main" id="contenido" tabindex="-1">
     <section class="as-scene as-scene--center" id="universo" aria-labelledby="universo-titulo">
       <div class="as-hero-copy">
@@ -202,9 +237,34 @@ h1, h2, h3 { font-family: var(--font-heading); font-weight: 700; }
         <img src="https://media.stronglify.com/295/pia09243-1794694016.jpg" alt="" width="1011" height="968" loading="lazy" decoding="async"/>
       </div>
     </section>
+    <section class="as-log" id="bitacora" aria-labelledby="bitacora-titulo">
+      <h2 id="bitacora-titulo">Bitácora</h2>
+      <ul class="as-log-list">
+        
+        <li>
+          <span class="as-kicker">Saturno</span>
+          <h3><a href="./saturno-en-equinoccio">El día en que los anillos desaparecieron</a></h3>
+          <p>En el equinoccio, la luz del Sol corre de canto por los anillos y Saturno se queda casi sin sombra.</p>
+        </li>
+        
+        <li>
+          <span class="as-kicker">Júpiter</span>
+          <h3><a href="./la-gran-mancha-roja">Una tormenta más vieja que nuestros mapas</a></h3>
+          <p>La Gran Mancha Roja lleva siglos girando. Mirarla es mirar el tiempo con otra escala.</p>
+        </li>
+        
+        <li>
+          <span class="as-kicker">Marte</span>
+          <h3><a href="./valles-marineris">Un cañón del tamaño de un continente</a></h3>
+          <p>Valles Marineris haría ver pequeño cualquier paisaje de la Tierra. Y aun así, desde lejos, es solo una línea.</p>
+        </li>
+        
+      </ul>
+      <a class="as-text-link" href="./blog">Ver toda la bitácora</a>
+    </section>
     <section class="as-closing" aria-labelledby="cierre-titulo">
       <h2 id="cierre-titulo">Vuelve a mirar.</h2>
-      <a class="as-text-link" href="#inicio">Volver al comienzo</a>
+      <a class="as-text-link" href="./blog">Leer la bitácora</a>
     </section>
   </main>
   <footer class="as-footer">
@@ -212,10 +272,16 @@ h1, h2, h3 { font-family: var(--font-heading); font-weight: 700; }
     <a class="as-brand" href="https://orbita-negra.test">alwayssunny</a>
     <p>El espacio también es una pausa.</p>
   </div>
-  <a class="as-text-link" href="https://orbita-negra.test">Volver al inicio</a>
-  <small class="as-credits">Fotografía: NASA/JPL/USGS · NASA/JPL-Caltech/SSI · NASA/JHUAPL/SwRI. · NASA/GSFC/SDO.</small>
+  <nav class="as-footer-nav" aria-label="Navegación del pie">
+    
+    <a class="as-text-link" href="./blog">Bitácora</a>
+    
+    <a class="as-text-link" href="./about">Nosotros</a>
+    
+    <a class="as-text-link" href="https://orbita-negra.test">Volver al inicio</a>
+  </nav>
+  <small class="as-credits">Fotografía: NASA/JPL/USGS · NASA/JPL-Caltech/SSI · NASA/JPL/Space Science Institute (Saturno, Júpiter) · NASA/JPL-Caltech (Marte, Valles Marineris). Imágenes de dominio público.</small>
 </footer>
-
 </div><script>
  
 (() => {

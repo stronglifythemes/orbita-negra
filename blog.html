@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="builder" content="Stronglify">
+<link rel="icon" type="image/x-icon" href="https://media.stronglify.com/295/favicon-1795015972.svg">
+<title>Bitácora · alwayssunny</title>
+<meta name="description" content="Bitácora de alwayssunny: notas cortas sobre planetas, tormentas y paisajes que no caben en la mirada.">
+<meta name="robots" content="index">
+<link rel="canonical" href="https://orbita-negra.test//blog"><style>
+html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}img{max-width:100%;height:auto}
+</style><style>
+ 
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("https://raw.githubusercontent.com/google/fonts/main/ofl/spacegrotesk/SpaceGrotesk%5Bwght%5D.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+}
+:root {
+  color-scheme: dark;
+  --color-background: #000000;
+  --color-surface: #000000;
+  --color-text: #ffffff;
+  --color-muted: #ffffff;
+  --color-accent: #ffffff;
+  --color-border: #000000;
+  --color-focus: #ffffff;
+  --font-heading: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 10rem;
+  --page-gutter: clamp(1.25rem, 5vw, 5rem);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { background: var(--color-background); overflow-x: clip; scroll-padding-top: 2rem; }
+body { margin: 0; background: var(--color-background); color: var(--color-text); font-family: var(--font-body); font-size: 1rem; line-height: 1.6; font-synthesis: none; }
+::selection { color: #000000; background: #ffffff; }
+a { color: var(--color-text); text-decoration: none; }
+a:hover { text-shadow: 0 0 1em rgba(255, 255, 255, 0.7); }
+a:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 7px; }
+img { display: block; max-width: 100%; height: auto; }
+h1, h2, h3, p { margin: 0; }
+h1, h2, h3 { font-family: var(--font-heading); font-weight: 700; }
+.as-experience { position: relative; isolation: isolate; overflow: clip; }
+.as-head { position: relative; z-index: 5; display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1.5rem var(--page-gutter); }
+.as-brand { font-weight: 700; font-size: clamp(1.25rem, 2vw, 1.6rem); letter-spacing: -0.07em; white-space: nowrap; }
+.as-nav { display: flex; align-items: center; gap: clamp(1rem, 3vw, 2.5rem); font-size: 0.875rem; font-weight: 500; }
+.as-nav a, .as-text-link { display: inline-flex; align-items: center; min-height: 44px; }
+.as-skip { position: absolute; top: 1rem; left: var(--page-gutter); z-index: 20; padding: 0.5rem 1rem; background: #000000; transform: translateY(-300%); }
+.as-skip:focus { transform: none; }
+.as-main { position: relative; z-index: 1; }
+.as-field { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+.as-star-layer { position: absolute; inset: -55vh -10vw; transform: translate3d(0, 0, 0); }
+.as-star-layer--far { opacity: 0.55; background-image: radial-gradient(1px 1px at 13% 21%, #ffffff 45%, transparent 70%), radial-gradient(0.7px 0.7px at 64% 77%, #ffffff 45%, transparent 70%), radial-gradient(0.6px 0.6px at 37% 45%, #ffffff 45%, transparent 70%), radial-gradient(0.8px 0.8px at 87% 14%, #ffffff 45%, transparent 70%); background-size: 213px 291px, 317px 257px, 163px 193px, 349px 379px; }
+.as-star-layer--mid { opacity: 0.75; background-image: radial-gradient(1.2px 1.2px at 37% 62%, #ffffff 45%, transparent 70%), radial-gradient(1px 1px at 81% 29%, #ffffff 45%, transparent 70%), radial-gradient(1.1px 1.1px at 16% 82%, #ffffff 45%, transparent 70%); background-size: 397px 431px, 479px 367px, 431px 503px; }
+.as-star-layer--near { background-image: radial-gradient(1.7px 1.7px at 24% 54%, #ffffff 35%, transparent 75%), radial-gradient(1.4px 1.4px at 78% 13%, #ffffff 35%, transparent 75%); background-size: 659px 701px, 797px 617px; }
+.as-star-layer.is-populated { background-image: none; }
+.as-star { position: absolute; display: block; border-radius: 50%; background: #ffffff; }
+.as-star-layer--near .as-star { box-shadow: 0 0 5px rgba(255, 255, 255, 0.35); }
+.as-scene { position: relative; }
+.as-scene--center { padding-top: clamp(4rem, 12vh, 8rem); padding-bottom: clamp(5rem, 12vw, 12rem); }
+.as-hero-copy { position: relative; z-index: 2; padding-inline: var(--page-gutter); text-align: center; }
+.as-title { margin-inline: auto; max-width: 11ch; font-size: clamp(3.75rem, 12vw, 10.5rem); line-height: 0.91; letter-spacing: -0.075em; text-wrap: balance; overflow-wrap: anywhere; }
+.as-lead { margin-top: 1.75rem; font-size: clamp(1rem, 1.5vw, 1.25rem); line-height: 1.6; }
+.as-text-link { margin-top: 1.5rem; font-size: 0.875rem; font-weight: 500; letter-spacing: 0.015em; }
+.as-planet { position: relative; z-index: 0; pointer-events: none; mix-blend-mode: screen; transform: translate3d(0, 0, 0); }
+.as-planet img { width: 100%; max-width: none; height: auto; aspect-ratio: 1; object-fit: contain; filter: grayscale(1) contrast(1.1); mask-image: radial-gradient(ellipse at center, #000000 52%, transparent 77%); -webkit-mask-image: radial-gradient(ellipse at center, #000000 52%, transparent 77%); }
+.as-planet--center { width: min(82vw, 50rem); margin: 1rem auto 0; }
+.as-scene--side { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); align-items: center; column-gap: clamp(2rem, 7vw, 8rem); width: min(100%, 100rem); min-height: 105svh; margin-inline: auto; padding: clamp(6rem, 12vw, 12rem) var(--page-gutter); }
+.as-copy { position: relative; z-index: 2; max-width: 28rem; }
+.as-copy h2, .as-closing h2 { font-size: clamp(3rem, 7.6vw, 7rem); line-height: 0.96; letter-spacing: -0.065em; text-wrap: balance; overflow-wrap: anywhere; }
+.as-copy p { max-width: 25ch; margin-top: 1.75rem; font-size: clamp(1rem, 1.5vw, 1.25rem); }
+.as-scene--left .as-copy { grid-column: 2; grid-row: 1; }
+.as-planet--left { grid-column: 1; grid-row: 1; width: 165%; margin-left: -65%; }
+.as-scene--right { grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); }
+.as-scene--right .as-copy { grid-column: 1; grid-row: 1; }
+.as-planet--right { grid-column: 2; grid-row: 1; width: 145%; margin-right: -45%; }
+.as-closing { padding: clamp(6rem, 17vw, 17rem) var(--page-gutter); text-align: center; }
+.as-closing h2 { max-width: 10ch; margin-inline: auto; }
+.as-footer { position: relative; z-index: 2; display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 2rem; padding: 3rem var(--page-gutter); }
+.as-footer p { margin-top: 0.75rem; font-size: 0.875rem; }
+.as-footer .as-text-link { margin: 0; }
+.as-credits { grid-column: 1 / -1; max-width: 80ch; font-size: 0.75rem; line-height: 1.6; }
+.as-document { position: relative; width: min(100%, 80rem); min-height: 65svh; margin-inline: auto; padding: clamp(4rem, 10vw, 10rem) var(--page-gutter); }
+.as-document h1 { max-width: 15ch; font-size: clamp(3rem, 8vw, 7rem); line-height: 1; letter-spacing: -0.065em; text-wrap: balance; overflow-wrap: anywhere; }
+.as-document > p { max-width: 55ch; margin-top: 2rem; font-size: 1.125rem; }
+.as-richtext { max-width: 65ch; margin-top: 3rem; overflow-wrap: anywhere; }
+.as-richtext:empty { margin: 0; }
+.as-richtext > * + * { margin-top: 1.5rem; }
+.as-richtext h2 { font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.1; letter-spacing: -0.04em; }
+.as-richtext h3 { font-size: clamp(1.375rem, 2.5vw, 1.75rem); line-height: 1.2; }
+.as-richtext a { font-weight: 700; }
+.as-richtext blockquote { margin-inline: 0; font-size: 1.25rem; }
+.as-richtext img { width: 100%; filter: grayscale(1); }
+.as-reading-list { list-style: none; padding: 0; margin: 4rem 0 0; max-width: 55ch; }
+.as-reading-list li + li { margin-top: 3rem; }
+.as-reading-list h2 { font-size: clamp(1.5rem, 3vw, 2.5rem); line-height: 1.1; letter-spacing: -0.04em; }
+.as-reading-list a { display: inline-flex; align-items: center; min-height: 44px; }
+.as-reading-list p { margin-top: 0.75rem; }
+@media (max-width: 700px) {
+  .as-head { padding-block: 1rem; }
+  .as-nav { font-size: 0.8125rem; gap: 1rem; }
+  .as-scene--center { padding-top: 4.5rem; padding-bottom: 5rem; }
+  .as-title { font-size: clamp(3.75rem, 14vw, 6rem); }
+  .as-planet--center { width: 96vw; margin-top: 2rem; }
+  .as-scene--side, .as-scene--right { display: grid; grid-template-columns: minmax(0, 1fr); row-gap: 3rem; min-height: auto; padding-block: 6rem; }
+  .as-scene--left .as-copy, .as-scene--right .as-copy { grid-column: 1; grid-row: 1; max-width: 26rem; }
+  .as-planet--left, .as-planet--right { grid-column: 1; grid-row: 2; width: 125%; }
+  .as-planet--left { margin-left: -35%; }
+  .as-planet--right { margin-left: 10%; margin-right: -35%; }
+  .as-copy h2, .as-closing h2 { font-size: clamp(3rem, 12vw, 5rem); }
+  .as-footer { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; padding-top: 2rem; }
+  .as-credits { grid-column: 1; }
+}
+ 
+.as-sun {
+  position: absolute;
+  display: block;
+  width: var(--sun-size);
+  aspect-ratio: 1;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+.as-sun img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: grayscale(1) contrast(1.12);
+  mask-image: radial-gradient(circle at center, #000000 54%, #000000 59%, transparent 65%);
+  -webkit-mask-image: radial-gradient(circle at center, #000000 54%, #000000 59%, transparent 65%);
+}
+.as-sun--far { --sun-size: clamp(160px, 16vw, 260px); left: 5vw; top: 14vh; opacity: 0.55; }
+.as-sun--mid { --sun-size: clamp(240px, 24vw, 400px); right: -5vw; top: 43vh; opacity: 0.65; }
+.as-sun--near { --sun-size: clamp(340px, 37vw, 620px); left: -14vw; top: 77vh; opacity: 0.6; }
+@media (max-width: 700px) {
+  .as-sun--far { --sun-size: 170px; left: -12vw; top: 18vh; }
+  .as-sun--mid { --sun-size: 250px; right: -30vw; top: 43vh; }
+  .as-sun--near { --sun-size: 340px; left: -45vw; top: 81vh; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .as-star-layer, .as-planet, .as-sun { transform: none !important; }
+}
+ 
+.as-experience > .as-document { z-index: 1; }
+.as-kicker { display: inline-block; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.7; }
+.as-log { position: relative; z-index: 2; width: min(100%, 80rem); margin-inline: auto; padding: clamp(5rem, 10vw, 10rem) var(--page-gutter) 0; }
+.as-log h2 { font-size: clamp(3rem, 7.6vw, 7rem); line-height: 0.96; letter-spacing: -0.065em; }
+.as-log-list { list-style: none; margin: 3rem 0 1rem; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(2rem, 4vw, 4rem); }
+.as-log-list h3 { margin-top: 0.75rem; font-size: clamp(1.375rem, 2.2vw, 2rem); line-height: 1.1; letter-spacing: -0.04em; }
+.as-log-list h3 a { display: inline; }
+.as-log-list p { margin-top: 0.75rem; opacity: 0.8; }
+.as-post-list { list-style: none; margin: clamp(3rem, 7vw, 6rem) 0 0; padding: 0; display: grid; gap: clamp(3rem, 7vw, 6rem); }
+.as-post { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); align-items: center; gap: clamp(2rem, 6vw, 6rem); }
+.as-post-media { display: block; mix-blend-mode: screen; }
+.as-post-media img { width: 100%; aspect-ratio: 1; object-fit: cover; filter: grayscale(1) contrast(1.1); mask-image: radial-gradient(circle at center, #000 55%, transparent 71%); -webkit-mask-image: radial-gradient(circle at center, #000 55%, transparent 71%); }
+.as-post-copy h2 { margin-top: 0.75rem; font-size: clamp(2rem, 4.4vw, 4rem); line-height: 1; letter-spacing: -0.055em; text-wrap: balance; }
+.as-post-copy p { max-width: 46ch; margin-top: 1.25rem; font-size: 1.0625rem; opacity: 0.85; }
+.as-article article { max-width: 60rem; }
+.as-back { margin-bottom: 2rem; min-height: 44px; }
+.as-article h1 { margin-bottom: 1.25rem; }
+.as-article-intro { max-width: 52ch; margin-top: 1.75rem !important; font-size: clamp(1.125rem, 1.8vw, 1.5rem); line-height: 1.5; }
+.as-article-planet { width: min(100%, 38rem); margin: clamp(2rem, 6vw, 5rem) auto 0; }
+.as-page-hero { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); align-items: center; gap: clamp(2rem, 6vw, 6rem); }
+.as-page-planet { width: 130%; margin-right: -30%; }
+.as-document > .as-text-link { margin-top: 3rem; }
+.as-footer-nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 0.5rem 2rem; }
+@media (max-width: 700px) {
+  .as-log-list { grid-template-columns: minmax(0, 1fr); }
+  .as-post, .as-page-hero { grid-template-columns: minmax(0, 1fr); }
+  .as-post-media { width: 80%; }
+  .as-page-planet { width: 110%; margin-right: 0; }
+  .as-footer-nav { justify-content: flex-start; }
+}
+</style><link rel="preload" href="https://raw.githubusercontent.com/google/fonts/main/ofl/spacegrotesk/SpaceGrotesk%5Bwght%5D.ttf" as="font" type="font/ttf" crossorigin></head>
+<body>
+  <div class="as-experience">
+  <div class="as-field" aria-hidden="true">
+    <div class="as-star-layer as-star-layer--far" data-star-depth="0.22"></div>
+    <div class="as-star-layer as-star-layer--mid" data-star-depth="0.55"></div>
+    <div class="as-star-layer as-star-layer--near" data-star-depth="1"></div>
+  </div>
+  <a class="as-skip" href="#contenido">Saltar al contenido</a>
+<header class="as-head">
+  <a class="as-brand" href="https://orbita-negra.test">alwayssunny</a>
+  <nav class="as-nav" aria-label="Navegación principal">
+    
+    <a href="./">Universo</a>
+    
+    <a href="./blog">Bitácora</a>
+    
+    <a href="./about">Nosotros</a>
+    
+  </nav>
+</header>
+  <main class="as-document" id="contenido" tabindex="-1">
+    <h1>Bitácora</h1>
+    <p>Notas cortas para mirar despacio. Cada entrada empieza en una fotografía y termina en una pregunta.</p>
+    <ul class="as-post-list">
+      
+      <li class="as-post">
+        <a class="as-post-media" href="./saturno-en-equinoccio" tabindex="-1" aria-hidden="true"><img src="https://media.stronglify.com/295/saturno-1795017960.jpg" alt="" width="800" height="800" loading="lazy" decoding="async"></a>
+        <div class="as-post-copy">
+          <span class="as-kicker">Saturno · Agosto 2009</span>
+          <h2><a href="./saturno-en-equinoccio">El día en que los anillos desaparecieron</a></h2>
+          <p>En el equinoccio, la luz del Sol corre de canto por los anillos y Saturno se queda casi sin sombra.</p>
+          <a class="as-text-link" href="./saturno-en-equinoccio">Leer la entrada</a>
+        </div>
+      </li>
+      
+      <li class="as-post">
+        <a class="as-post-media" href="./la-gran-mancha-roja" tabindex="-1" aria-hidden="true"><img src="https://media.stronglify.com/295/jupiter-1795017961.jpg" alt="" width="800" height="800" loading="lazy" decoding="async"></a>
+        <div class="as-post-copy">
+          <span class="as-kicker">Júpiter · Diciembre 2000</span>
+          <h2><a href="./la-gran-mancha-roja">Una tormenta más vieja que nuestros mapas</a></h2>
+          <p>La Gran Mancha Roja lleva siglos girando. Mirarla es mirar el tiempo con otra escala.</p>
+          <a class="as-text-link" href="./la-gran-mancha-roja">Leer la entrada</a>
+        </div>
+      </li>
+      
+      <li class="as-post">
+        <a class="as-post-media" href="./valles-marineris" tabindex="-1" aria-hidden="true"><img src="https://media.stronglify.com/295/marte-1795017963.jpg" alt="" width="800" height="800" loading="lazy" decoding="async"></a>
+        <div class="as-post-copy">
+          <span class="as-kicker">Marte · Julio 1976</span>
+          <h2><a href="./valles-marineris">Un cañón del tamaño de un continente</a></h2>
+          <p>Valles Marineris haría ver pequeño cualquier paisaje de la Tierra. Y aun así, desde lejos, es solo una línea.</p>
+          <a class="as-text-link" href="./valles-marineris">Leer la entrada</a>
+        </div>
+      </li>
+      
+    </ul>
+  </main>
+  <footer class="as-footer">
+  <div>
+    <a class="as-brand" href="https://orbita-negra.test">alwayssunny</a>
+    <p>El espacio también es una pausa.</p>
+  </div>
+  <nav class="as-footer-nav" aria-label="Navegación del pie">
+    
+    <a class="as-text-link" href="./blog">Bitácora</a>
+    
+    <a class="as-text-link" href="./about">Nosotros</a>
+    
+    <a class="as-text-link" href="https://orbita-negra.test">Volver al inicio</a>
+  </nav>
+  <small class="as-credits">Fotografía: NASA/JPL/USGS · NASA/JPL-Caltech/SSI · NASA/JPL/Space Science Institute (Saturno, Júpiter) · NASA/JPL-Caltech (Marte, Valles Marineris). Imágenes de dominio público.</small>
+</footer>
+</div><script>
+ 
+(() => {
+  "use strict";
+  const start = () => {
+    const root = document.querySelector(".as-experience");
+    if (!root) return;
+    const layers = Array.from(root.querySelectorAll("[data-star-depth]"));
+    const planets = Array.from(root.querySelectorAll("[data-planet-depth]"));
+    const suns = Array.from(root.querySelectorAll("[data-sun-depth]"));
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const compact = window.matchMedia("(max-width: 700px)");
+    let frame = 0;
+    let dirty = true;
+    let scroll = window.scrollY || 0;
+    let viewport = window.innerHeight;
+    let scrollable = 1;
+    let centers = [];
+    let seed = 679;
+    const random = () => {
+      seed = (seed * 1664525 + 1013904223) >>> 0;
+      return seed / 4294967296;
+    };
+    const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
+    const populate = () => {
+      seed = 679;
+      const counts = compact.matches ? [52, 28, 12] : [128, 68, 28];
+      layers.forEach((layer, index) => {
+        const fragment = document.createDocumentFragment();
+        for (let n = 0; n < counts[index]; n += 1) {
+          const star = document.createElement("span");
+          const size = [0.45, 0.8, 1.25][index] + random() * [0.55, 0.7, 0.85][index];
+          star.className = "as-star";
+          star.style.left = `${random() * 100}%`;
+          star.style.top = `${random() * 100}%`;
+          star.style.width = `${size.toFixed(2)}px`;
+          star.style.height = `${size.toFixed(2)}px`;
+          star.style.opacity = (0.3 + random() * 0.7).toFixed(2);
+          fragment.appendChild(star);
+        }
+        layer.replaceChildren(fragment);
+        layer.classList.add("is-populated");
+      });
+    };
+    const measure = () => {
+      viewport = window.innerHeight;
+      scrollable = Math.max(1, document.documentElement.scrollHeight - viewport);
+      centers = planets.map((planet) => {
+        const scene = planet.closest(".as-scene");
+        const box = scene.getBoundingClientRect();
+        return box.top + scroll + box.height / 2;
+      });
+      dirty = false;
+    };
+    const update = () => {
+      frame = 0;
+      if (dirty) measure();
+      if (reduced.matches) {
+        layers.concat(planets, suns).forEach((node) => node.style.removeProperty("transform"));
+        return;
+      }
+      const progress = clamp(scroll / scrollable, 0, 1);
+      const travel = compact.matches ? 180 : 340;
+      layers.forEach((layer) => {
+        const depth = Number(layer.dataset.starDepth);
+        layer.style.transform = `translate3d(0, ${(-progress * travel * depth).toFixed(2)}px, 0)`;
+      });
+      const solarTravel = compact.matches ? 280 : 520;
+      suns.forEach((sun, index) => {
+        const depth = Number(sun.dataset.sunDepth);
+        const direction = index % 2 === 0 ? -1 : 1;
+        const x = progress * 42 * depth * direction;
+        const y = -progress * solarTravel * depth;
+        const scale = 1 + progress * depth * 0.12;
+        sun.style.transform = `translate3d(${x.toFixed(2)}px, ${y.toFixed(2)}px, 0) scale(${scale.toFixed(3)})`;
+      });
+      const limit = compact.matches ? 24 : 56;
+      planets.forEach((planet, index) => {
+        const distance = scroll + viewport / 2 - centers[index];
+        const offset = clamp(distance * Number(planet.dataset.planetDepth), -limit, limit);
+        planet.style.transform = `translate3d(0, ${offset.toFixed(2)}px, 0)`;
+      });
+    };
+    const schedule = () => {
+      if (!frame) frame = window.requestAnimationFrame(update);
+    };
+    const onScroll = () => {
+      scroll = window.scrollY || 0;
+      if (!reduced.matches) schedule();
+    };
+    const onResize = () => {
+      scroll = window.scrollY || 0;
+      dirty = true;
+      schedule();
+    };
+    const onCompactChange = () => {
+      populate();
+      onResize();
+    };
+    const listen = (query, listener) => {
+      if (query.addEventListener) query.addEventListener("change", listener);
+      else if (query.addListener) query.addListener(listener);
+    };
+    populate();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onResize, { passive: true });
+    window.addEventListener("load", onResize, { once: true });
+    document.addEventListener("visibilitychange", () => {
+      if (!document.hidden) onResize();
+    });
+    listen(reduced, schedule);
+    listen(compact, onCompactChange);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(onResize).catch(() => {});
+    schedule();
+  };
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start, { once: true });
+  else start();
+})();
+</script></body>
+</html>
